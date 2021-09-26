@@ -1,0 +1,24 @@
+## YAML Template.
+---
+spring:
+    datasource:
+        url: jdbc:postgresql://localhost:5432/GrupoDot
+        username: postgres
+        password: 1234
+        
+        driver-class-name: org.postgresql.Driver
+    jpa:
+        hibernate:
+            ddl-auto: none
+        show-sql: true
+        
+    application:
+        name: GrupoDot
+    jackson:
+        serialization:
+            fail-on-empty-beans: false
+            
+info.name: GrupoDot
+
+server:
+    port: 8080
